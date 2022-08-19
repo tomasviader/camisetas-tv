@@ -1,0 +1,18 @@
+footer {
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0px;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: column;
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+}

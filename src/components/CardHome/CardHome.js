@@ -1,19 +1,14 @@
 import './CardHome.scss'
+import './CardLabel/CardLabel'
+import image from './../../assets/cardHome.jpg'
+import CardLabel from './CardLabel/CardLabel'
 
 const CardHome = ( {text= 'Text'} ) => {
 
     return (
-        <div className='blockCards'>
-            {/* <img src="/public/assets/cardHome.jpg"></img> */}
-            <div className="cards">
-                <div className='cards-label'><p>{text}</p></div>
-            </div>
-            <div className="cards">
-                <div className='cards-label'><p>{text}</p></div>
-            </div>
-            <div className="cards">
-                <div className='cards-label'><p>{text}</p></div>
-            </div>
+        <div className="cards">
+            <div className='imagenInicio'> <img  src={image} alt=""/> </div>
+            <CardLabel/>
         </div>
     )
 }

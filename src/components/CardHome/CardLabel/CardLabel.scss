@@ -1,0 +1,48 @@
+.card-label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: center;
+
+    .card-label-buttons{
+        margin-bottom: 1rem;
+        transform: scale(1.3);
+
+        button{
+            font-size: medium;
+            color: white;
+            border: .5px gray solid;
+            border-radius: 30%;
+            background-color: rgb(39, 122, 237); 
+        }
+        
+
+        span{
+            margin: 0 1rem 0 1rem;
+        }
+    }
+
+    .carry-button{
+        margin-top: 1rem;
+        transform: scale(1.2);
+
+        :hover {
+            transform: scale(1.2);
+            transition: 1.3s;
+            
+        }
+
+        .carry-button-normal{
+            background-color: rgb(225, 213, 91);
+        }
+    
+        .carry-button-success{
+            background-color: rgb(114, 217, 103);
+            
+        }
+
+    }
+    
+    
+
+}

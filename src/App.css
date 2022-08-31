@@ -7,10 +7,14 @@
   line-height: 1.5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.block-cards{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 5rem;
+
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

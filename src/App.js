@@ -1,18 +1,16 @@
 import './App.css';
 import Header from './components/Header/Header.js';
 import Footer from './components/Footer/Footer.js';
-import CardHome from './components/CardHome/CardHome';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 const App = () => {
 
   return (
     <div>
       <Header/>
-      <div className='blockCards'>
-        <CardHome text = 'Comprar 1'/>
-        <CardHome text = 'Comprar 2'/>
-        <CardHome text = 'Comprar 3'/>
-      </div>
+
+      <div className='block-cards'> <ItemListContainer/> </div>
+
       <Footer/>
       
     </div>

@@ -1,13 +1,16 @@
+import Contador from '../Contador/Contador'
+import './ItemDetail.scss'
 
-
-
-const ItemDetail = ({item= []}) => {
+const ItemDetail = ( {item} ) => {
 
     return (
-        <div>
-            <img src={item.img}/>
-            <h3>{item.nombre}</h3>
-            <h4>{item.precio}</h4>
+        <div className="item-detail">
+            <img src={item.imgDetail} alt={item.nombre}/>
+            <div className="item-detail-data">
+                <h3>{item.nombre}</h3>
+                <h4>${item.precio}</h4>
+                {<Contador/>}
+            </div>
         </div>
     )
 }

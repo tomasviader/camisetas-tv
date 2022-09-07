@@ -1,18 +1,20 @@
 .bg-header {
     
-    background-color: bisque;
+    background-color: rgb(186, 185, 184);
     .header-container {
         max-width: 900px;
         margin: 0 auto;
         padding: 20px 0;
-    
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 4rem;
 
         .header-title {
             font-size: 30px;
             font-weight: 700;
+            color: black;
+            text-decoration:none;
         }
         
         .header-navbar {
@@ -24,6 +26,8 @@
             .header-navlink {
                 font-size: 18px;
                 font-weight: 700;
+                color: black;
+                text-decoration:none;
             }
         }
     }

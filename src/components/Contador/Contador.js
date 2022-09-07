@@ -1,7 +1,7 @@
 import { useState } from "react"
-import './CardLabel.scss'
+import './Contador.scss'
 
-const CardLabel = () => {
+const Contador = () => {
 
     const [counter, setCounter] = useState(0)
     const [comprar, setComprar] = useState(true)
@@ -30,11 +30,11 @@ const CardLabel = () => {
                 <button 
                     className={ comprar ? "carry-button-normal" : "carry-button-success" } onClick={handleComprar} 
                     >
-                    { comprar ? "Agregar al carrito" : "Ir a carrito!" }
+                    { comprar ? "Agregar al carrito" : "Agregado" }
                 </button>
             </div>
         </div>
     )
 }
 
-export default CardLabel;
+export default Contador;

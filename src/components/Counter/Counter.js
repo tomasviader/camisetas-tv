@@ -1,22 +1,23 @@
-import { useState } from "react"
-import './Contador.scss'
 
-const Contador = () => {
+import './Counter.scss'
 
-    const [counter, setCounter] = useState(0)
-    const [comprar, setComprar] = useState(true)
+const Counter = ({ max, counter, setCounter, handleAgregar }) => {
+
+    
+    /* const [comprar, setComprar] = useState(true) */
 
     const handleSumar = () => {
-        setCounter(counter + 1)
+        if (counter < max){
+            setCounter(counter + 1)
+        }
     }
+
     const handleRestar = () => {
         if (counter > 0 ) {
             setCounter(counter - 1)
         }
     }
-    const handleComprar = () => {
-        setComprar(!comprar)
-    }
+
     
     return (
         <div className="card-label">
@@ -28,13 +29,14 @@ const Contador = () => {
 
             <div className="carry-button">
                 <button 
-                    className={ comprar ? "carry-button-normal" : "carry-button-success" } onClick={handleComprar} 
-                    >
-                    { comprar ? "Agregar al carrito" : "Agregado" }
+                    className='carry-button-normal'/* { comprar ? "carry-button-normal" : "carry-button-success" } */ 
+                    onClick={handleAgregar} 
+                >
+                    Agregado {/*  { comprar ? "Agregar al carrito" : "Agregado" } */}
                 </button>
             </div>
         </div>
     )
 }
 
-export default Contador;
+export default Counter;

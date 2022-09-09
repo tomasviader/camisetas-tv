@@ -16,8 +16,12 @@ const Header = () => {
                 <Link to='/productos/mundial' className="header-navlink">Mundial</Link>
                 <Link to='/productos/argentina' className="header-navlink">Argentina</Link>
                 <Link to='/productos/clubes' className="header-navlink">Clubes</Link>
-                {/* <Link to='/carrito' className="header-navlink">Carrito</Link> */}
-                <img src='../../../images/carro-de-la-carretilla.png' alt=''/>
+
+                <Link to='/contacto' className="header-navlink">Contacto</Link>
+
+                <Link to='/carrito' className="header-navlink">
+                    <img src='../../../images/carro-de-la-carretilla.png' alt=''/>
+                </Link>
             </nav>
         </div>        
         </header>

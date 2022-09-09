@@ -7,7 +7,21 @@ const stock = [
     imgHome: '../../images/argentina-home.png',
     imgDetail: '../../images/argentina-detail.png',
     stock: 50,
-    category: "argentina"
+    category: "argentina",
+    talles: [
+        {
+            value: 'S',
+            text: 'Small'        
+        },
+        {
+            value: 'M',
+            text: 'Medium'        
+        },
+        {
+            value: 'L',
+            text: 'Large'        
+        }
+    ]
 },
 
     {
@@ -17,7 +31,21 @@ const stock = [
     imgHome: '../../images/belgica-home.png',
     imgDetail: '../../images/belgica-detail.png',
     stock: 30,
-    category: "mundial"    
+    category: "mundial",
+    talles: [
+        {
+            value: 'S',
+            text: 'Small'        
+        },
+        {
+            value: 'M',
+            text: 'Medium'        
+        },
+        {
+            value: 'L',
+            text: 'Large'        
+        }
+    ]    
     },
 
     {
@@ -27,7 +55,21 @@ const stock = [
     imgHome: '../../images/munich-home.png',
     imgDetail: '../../images/munich-detail.png',
     stock: 10, 
-    category: "clubes"    
+    category: "clubes",
+    talles: [
+        {
+            value: 'S',
+            text: 'Small'        
+        },
+        {
+            value: 'M',
+            text: 'Medium'        
+        },
+        {
+            value: 'L',
+            text: 'Large'        
+        }
+    ]    
     }
 ]
 

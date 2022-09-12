@@ -2,13 +2,18 @@ import Counter from '../Counter/Counter'
 import './ItemDetail.scss'
 import { useState } from 'react'
 import Select from '../Select/Select'
+import { useCartContext } from '../../context/CartContext'
+import { Link } from 'react-router-dom'
 
 const ItemDetail = ( {item} ) => {
 
+
+    const { cart, addToCart, isInCart } = useCartContext()
+    console.log(cart)
+
+
     const [cantidad, setCantidad] = useState(1)
-
     const [talle, setTalle] = useState(item.talles[0].value)
-
 
 
     const handleAgregar = () =>{
@@ -21,8 +26,11 @@ const ItemDetail = ( {item} ) => {
             cantidad
         }
 
-        console.log(itemToCart)
+
+        addToCart(itemToCart)
+
     }
+
 
     return (
         <div className="item-detail">
@@ -33,13 +41,17 @@ const ItemDetail = ( {item} ) => {
                 
                 <Select talles={item.talles} onSelect={setTalle}/>
 
-                {<Counter
-                    max={item.stock} 
-                    counter={cantidad}
-                    setCounter={setCantidad}
-                    handleAgregar= {handleAgregar}
-                    
-                />}
+                { 
+                    isInCart(item.id)
+                    ?   <Link to='/carrito' > <button> Terminar compra </button></Link>
+                    :   <Counter
+                        max={item.stock} 
+                        counter={cantidad}
+                        setCounter={setCantidad}
+                        handleAgregar= {handleAgregar}
+                        />
+                }
+
             </div>
         </div>
     )

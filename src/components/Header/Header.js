@@ -1,5 +1,6 @@
 import './Header.scss';
 import { Link } from 'react-router-dom';
+import CartWidget from '../CartWidget/CartWidget';
 
 
 
@@ -18,10 +19,7 @@ const Header = () => {
                 <Link to='/productos/clubes' className="header-navlink">Clubes</Link>
 
                 <Link to='/contacto' className="header-navlink">Contacto</Link>
-
-                <Link to='/carrito' className="header-navlink">
-                    <img src='../../../images/carro-de-la-carretilla.png' alt=''/>
-                </Link>
+                <CartWidget/>
             </nav>
         </div>        
         </header>

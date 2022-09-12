@@ -1,10 +1,10 @@
 
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Counter.scss'
 
 const Counter = ({ max, counter, setCounter, handleAgregar }) => {
-
-    
-    /* const [comprar, setComprar] = useState(true) */
+   /*  const [add, setAdd] = useState(true) */
 
     const handleSumar = () => {
         if (counter < max){
@@ -28,12 +28,14 @@ const Counter = ({ max, counter, setCounter, handleAgregar }) => {
             </div>
 
             <div className="carry-button">
+            <Link to='/carrito'>
                 <button 
-                    className='carry-button-normal'/* { comprar ? "carry-button-normal" : "carry-button-success" } */ 
+                    className='carry-button-normal' 
                     onClick={handleAgregar} 
                 >
-                    Agregado {/*  { comprar ? "Agregar al carrito" : "Agregado" } */}
+                    Agregar al carrito {/* { add ? "Agregar al carrito" : "Agregado" } */}
                 </button>
+            </Link>
             </div>
         </div>
     )

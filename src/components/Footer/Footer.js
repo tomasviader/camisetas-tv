@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Footer.scss'
 
 
@@ -6,9 +7,9 @@ const Footer = () => {
     return (
         <footer>
             <div>
-                <a className='footer-links'>WhatsApp</a>
-                <a className='footer-links'>Ubicacion</a>
-                <a className='footer-links'>Facebook</a>
+                <Link to='/' className='footer-links'>WhatsApp</Link>
+                <Link to='/' className='footer-links'>Ubicacion</Link>
+                <Link to='/' className='footer-links'>Facebook</Link>
             </div>
         </footer>
     )

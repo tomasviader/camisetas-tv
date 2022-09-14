@@ -16,7 +16,25 @@ export const CartProvider = ({children}) => {
     }
 
     const removeItem = (id) => {
-        setCart( cart.filter((item) => item.id !== id) )
+        Swal.fire({
+            title: 'Estas seguro que quieres eleminar esta camiseta del carrito?',
+            text: "No vas a poder revertirlo!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, eliminar!'
+        })
+        .then((result) => {
+            if (result.isConfirmed) {
+                setCart( cart.filter((item) => item.id !== id) )
+                Swal.fire(
+                'Eliminado!',
+                'La camiseta fue eliminada del carrito.',
+                'Exito'
+            )
+            }
+        })
     }
 
     const isInCart = (id) => {

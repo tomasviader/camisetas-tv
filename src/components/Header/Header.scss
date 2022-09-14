@@ -1,8 +1,17 @@
 .bg-header {
+    background-color: #bab9b8;
     
-    background-color: rgb(186, 185, 184);
+    .header-user{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 1rem;
+        padding-right: 1.5rem;
+        margin-bottom: -1rem;
+        
+    }
+    
     .header-container {
-        max-width: 900px;
+        width: 900px;
         margin: 0 auto;
         padding: 20px 0;
         display: flex;
@@ -11,13 +20,17 @@
         height: 4rem;
 
         .header-title {
-            font-size: 30px;
+            margin-left: -5rem;
+            padding-bottom: 2rem;
+            font-size: 2rem;
             font-weight: 700;
             color: black;
             text-decoration:none;
         }
         
         .header-navbar {
+            margin-left: 11rem;
+            padding-bottom: 2rem;
             min-width: 400px;
             display: flex;
             justify-content: space-around;
@@ -29,6 +42,11 @@
                 color: black;
                 text-decoration:none;
             }
+        }
+        
+        .header-nav-cart{
+            display:flex ;
+            margin-left: 2rem;
         }
     }
 }

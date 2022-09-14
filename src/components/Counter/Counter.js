@@ -1,6 +1,3 @@
-
-
-import { Link } from 'react-router-dom'
 import './Counter.scss'
 
 const Counter = ({ max, counter, setCounter, handleAgregar }) => {
@@ -28,14 +25,13 @@ const Counter = ({ max, counter, setCounter, handleAgregar }) => {
             </div>
 
             <div className="carry-button">
-            <Link to='/carrito'>
                 <button 
                     className='carry-button-normal' 
                     onClick={handleAgregar} 
                 >
                     Agregar al carrito {/* { add ? "Agregar al carrito" : "Agregado" } */}
                 </button>
-            </Link>
+            
             </div>
         </div>
     )

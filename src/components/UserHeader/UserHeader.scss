@@ -1,0 +1,23 @@
+
+small{
+    margin-right: 1.5rem;
+}
+
+.bt-logout{
+    background-color:#e45c52;
+    border: none;
+    border-radius: 8%;
+    color: white;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8rem;
+    cursor: pointer;
+    
+    &:hover {
+        background-color:#f44336;
+        font-size: .5;
+        font-weight: bold;
+    }
+}

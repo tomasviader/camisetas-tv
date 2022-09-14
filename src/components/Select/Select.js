@@ -1,4 +1,5 @@
-import React from 'react'
+import './Select.scss'
+
 
 const Select = ( {talles, onSelect} ) => {
 
@@ -8,11 +9,14 @@ const Select = ( {talles, onSelect} ) => {
 
 
     return (
-        <select onChange={handleSelect}>
-            {
-            talles.map((tal) => <option key={tal.value} value={tal.value} > {tal.text} </option>)
-            }
-        </select>
+        <div className="select-talles">
+            <select onChange={handleSelect}>
+                {
+                talles.map((tal) => <option key={tal.value} value={tal.value} > {tal.text} </option>)
+                }
+            </select>
+            
+        </div>
     )
 }
 

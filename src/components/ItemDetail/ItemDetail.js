@@ -3,7 +3,6 @@ import './ItemDetail.scss'
 import { useState } from 'react'
 import Select from '../Select/Select'
 import { useCartContext } from '../../context/CartContext'
-import { Link } from 'react-router-dom'
 import FinishButton from '../FinishButton/FinishButton'
 
 const ItemDetail = ( {item} ) => {

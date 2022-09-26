@@ -38,7 +38,12 @@ const Cart = () => {
                         </button>
                     </>
                 
-                : <button onClick={()=> emptyCart()}>Vaciar carrito</button>
+                :   <>
+                        <button onClick={()=> emptyCart()}>Vaciar carrito</button>
+                        <Link to="/checkout">Terminar mi compra</Link>
+                    </> 
+
+
                 
             }
 

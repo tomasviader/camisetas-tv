@@ -11,8 +11,7 @@ const AppRouter = () => {
         <BrowserRouter>
             {
                 user.logged
-                    ? <PrivateRoutes/>
-
+                    ? <PrivateRoutes/>                
                     : <PublicRoutes/>
             }        
         </BrowserRouter>

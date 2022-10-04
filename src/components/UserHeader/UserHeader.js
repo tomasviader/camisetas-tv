@@ -7,7 +7,7 @@ const UserHeader = () => {
     
     return (
         <div>
-            <small>PEPE@gmail.com{user.user}</small>
+            <small>{user.user}</small>
             <button onClick={logout} className='bt-logout'>Cerrar Sesion</button>
         </div>
     )

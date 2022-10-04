@@ -6,8 +6,8 @@ export const LoginContext = createContext()
 
 const usuario = [
     {
-        email : '',  //'mail@gmail.com',
-        password: '' //'1234'
+        email : '', 
+        password: ''
     }
 ]
 

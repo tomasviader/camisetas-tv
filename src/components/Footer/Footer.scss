@@ -1,13 +1,14 @@
 footer {
     display: flex;
-    border: 1px solid black;
+    border-top: 1px solid black;
     position: absolute;
     height: 5rem;
     width: 100%;
     justify-content: space-around;
     flex-direction: column;
     margin-top: 3rem;
-    bottom: 0%;
+    position: relative;
+    bottom: 0px;
 
     div{
         display: flex;

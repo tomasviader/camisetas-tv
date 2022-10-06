@@ -1,0 +1,130 @@
+
+.div-cart{
+    display: flex;
+    flex-direction: row;
+    
+
+    h1{
+        display: none;
+        position: absolute;
+        text-align: center;
+        color: rgb(53, 56, 56);
+    }    
+
+    .div-productos-cart{
+        width: 50%;
+
+        .div-referencias{
+            margin: 2rem 0 -3rem 4rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 2rem;
+            color: #565c5c;
+    
+            .p-nombre{
+                width: 300px;
+                text-align: left;
+            }
+    
+            .p-precio{
+                width: 100px;
+                margin-left:11.25rem;
+            }
+    
+            .p-cantidad{
+                width: 100px;
+                margin-left:5.5rem;
+            
+            }
+            .p-talle{
+                width: 100px;
+                margin-left:4.25rem;
+            }
+
+            
+        }
+
+        .div-but{
+            margin: 4rem 0 0 4rem;
+
+            .but-vaciar{
+                background: #f44336;
+                border: none;
+                border-radius: 50px;
+                width: 30%;
+                height: 2.25rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1px;
+                cursor: pointer;
+            }
+    
+            .but-continue{
+                margin-left: 10rem;
+                background: #737878;
+                border: none;
+                border-radius: 50px;
+                width: 40%;
+                height: 2.25rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1px;
+                cursor: pointer;
+    
+                a{
+                    color: #ffffff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .resumem-compra{
+        border: 1px solid black;
+        width: 23rem;
+        margin: 3rem 0 0 12rem;
+
+        h3{
+            text-align: center;
+        }
+
+        .div-total{
+            display: flex;
+            justify-content: space-around;
+            font-size: large;
+            color: #797877;
+
+            .h4-total-numero{
+                color: #000000;
+            }
+        }
+
+
+        .but-success{
+            margin: 4rem 0 0 4.5rem;
+            background: #56f436;
+            border: none;
+            border-radius: 50px;
+            width: 60%;
+            height: 2.25rem;
+            font-weight: 550;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            
+            a{
+                color: #000000;
+                text-decoration: none;
+            }
+        }
+
+    }
+}
+
+footer{
+    display: none;
+}

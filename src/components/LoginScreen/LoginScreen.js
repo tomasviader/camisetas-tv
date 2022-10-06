@@ -1,4 +1,5 @@
 import { useContext } from 'react'
+//import {loginWithGoogle } from '../../firebase/'
 import { LoginContext } from '../../context/LoginContext'
 import useForm from '../../hooks/useForm'
 
@@ -32,6 +33,7 @@ const LoginScreen = () => {
                 onChange={handleInputChange}
                 />
                 <button type='submit'>Ingresar</button>
+                {/* <button onClick={ loginWithGoogle() }>Ingresar con google</button> */}
             
             </form>
             

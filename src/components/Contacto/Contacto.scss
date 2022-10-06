@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+}
+
+.div-form{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    //width: 50%;
+    align-items: center;
+    justify-content: center;
+    
+    
+    .div-inputs{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 7rem 3rem 3rem 0;
+        
+        p{
+            margin-left: -10rem;
+            margin-bottom: -0.01rem;
+            font-size: 1.5rem;
+        }
+        
+        .p-email{
+            margin-left: -12rem;
+
+        }
+
+        input{
+            height: 2rem;
+            width: 17rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .div-textarea{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 8rem 3rem 3rem 0;
+
+        textarea{
+            font-size: 1.3rem;
+            height: 15rem;
+            width: 23rem;
+        }
+    }
+    
+} 

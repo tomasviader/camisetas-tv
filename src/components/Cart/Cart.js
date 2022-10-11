@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { useCartContext } from "../../context/CartContext"
 import CartItem from "../CartItem/CartItem"
+import EmptyCart from "../EmptyCart/EmptyCart"
 import './Cart.scss'
 
 
@@ -13,12 +14,7 @@ const Cart = () => {
             {
                 cartTotal() === 0
 
-                ?   <>
-                        <h2>Carrito Vacio!</h2>
-                        <button>
-                            <Link to='/'>Volver a Inicio</Link>
-                        </button>
-                    </>
+                ?   <EmptyCart/>
                 
                 :   <>  <div className="div-cart">
                             <h1>Carrito</h1>

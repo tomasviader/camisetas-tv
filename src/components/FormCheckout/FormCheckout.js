@@ -4,6 +4,7 @@ import { addDoc, collection, getDocs, writeBatch, query, where, documentId } fro
 import { db } from '../../firebase/config'
 import useForm from "../../hooks/useForm"
 import './FormCheckout.scss'
+import EmptyCart from "../EmptyCart/EmptyCart"
 
 const FormCheckout = () => {
 
@@ -75,10 +76,7 @@ const FormCheckout = () => {
 
     if (cart.length === 0) {
         return(
-            <>
-                <h2>Carrito vacio !</h2>
-                <Link to='/'> Ir a comprar</Link>
-            </>
+            <EmptyCart/>
         )
     }
 

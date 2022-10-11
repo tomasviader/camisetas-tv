@@ -63,11 +63,12 @@ export const CartProvider = ({children}) => {
         .then((result) => {
             if (result.isConfirmed) {
                 setCart([])  
-                Swal.fire(
-                'Eliminado!',
-                'Se vacio el carrito.',
-                'success'
-            )
+                Swal.fire({
+                title:'Eliminado!',
+                text:'Se vacio el carrito.',
+                confirmButtonColor: '#6d6d6d',
+                confirmButtonText: 'Ok'
+            })
             }
         })
         
@@ -78,17 +79,15 @@ export const CartProvider = ({children}) => {
             title: 'Tu compra se registro con exito!',
             text: `Tu numero de orden es: ${id}`,
             icon: 'sucess',
-            confirmButtonColor: '#3085d6',
+            confirmButtonColor: '#6d6d6d',
             confirmButtonText: 'Genial!'
         })
         setCart([])
-        
     }
 
     useEffect(() => {
         localStorage.setItem('carrito', JSON.stringify(cart))
-    }, [cart])
-    
+    }, [cart]) 
 
     return(
 

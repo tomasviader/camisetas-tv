@@ -124,6 +124,39 @@
     }
 }
 
+.div-empty-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+    h2{
+        margin-top: 8rem;
+        font-size: 3rem;
+    }
+
+    .but-volver{
+        margin-top: 2rem;
+        margin-bottom: 18rem;
+        background: #CE142F;
+        border: none;
+        border-radius: 50px;
+        width: 20%;
+        height: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        a {
+            font-weight: 400;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
 
 footer{
     margin-top: 12rem;

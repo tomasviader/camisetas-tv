@@ -1,21 +1,15 @@
 import './Header.scss';
 import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
-
 import UserHeader from '../UserHeader/UserHeader';
-
-
 
 const Header = () => {
 
-
     return (
         <header className="bg-header">
-
             <div className='header-user'>
                 <UserHeader/>
             </div>
-
             <div className="header-container">
                 <Link to="/" className="header-title">Camisetas TV</Link>
                 <nav className="header-navbar">

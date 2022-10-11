@@ -1,7 +1,6 @@
 import './Counter.scss'
 
 const Counter = ({ max, counter, setCounter, handleAgregar }) => {
-   /*  const [add, setAdd] = useState(true) */
 
     const handleSumar = () => {
         if (counter < max){
@@ -29,7 +28,7 @@ const Counter = ({ max, counter, setCounter, handleAgregar }) => {
                     className='carry-button-normal' 
                     onClick={handleAgregar} 
                 >
-                    Agregar al carrito {/* { add ? "Agregar al carrito" : "Agregado" } */}
+                    Agregar al carrito
                 </button>
             
             </div>

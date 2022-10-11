@@ -1,6 +1,7 @@
 import ItemList from '../ItemList/ItemList'
 import Loader from '../Loader/Loader'
 import useProductos from '../../hooks/useProductos'
+import './ItemListContainer.scss'
 
 
 const ItemListContainer = () => {

@@ -21,8 +21,8 @@ export const CartProvider = ({children}) => {
             text: "No vas a poder revertirlo!",
             icon: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
+            confirmButtonColor: '#6d6d6d',
+            cancelButtonColor: '#CE142F',
             confirmButtonText: 'Si, eliminar!'
         })
         .then((result) => {
@@ -51,20 +51,21 @@ export const CartProvider = ({children}) => {
 
     const emptyCart = () => {
         Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
+            title: 'Estas seguro?',
+            text: "No vas a poder revertirlo!",
             icon: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
+            color: '#000',
+            confirmButtonColor: '#6d6d6d',
+            cancelButtonColor: '#CE142F',
+            confirmButtonText: 'Si, eliminalo!'
         })
         .then((result) => {
             if (result.isConfirmed) {
                 setCart([])  
                 Swal.fire(
-                'Deleted!',
-                'Your file has been deleted.',
+                'Eliminado!',
+                'Se vacio el carrito.',
                 'success'
             )
             }

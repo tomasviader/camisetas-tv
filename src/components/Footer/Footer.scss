@@ -1,20 +1,29 @@
 footer {
     display: flex;
+    flex-direction: row;
     border-top: 1px solid black;
     position: absolute;
-    height: 5rem;
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: column;
     margin-top: 3rem;
     position: relative;
     bottom: 0px;
 
-    div{
+    .div-seguinos{
+        margin-top: 1rem;
+        margin-left: 4rem;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
+
+        .footer-links{
+            color: #454141;
+            padding-top: 1rem;
+            margin-left: 2rem;
+        }
+        
+        .link-contacto{
+            color: #454141;
+            text-decoration: none;
+            margin-left: 20rem;
+            
+        }
+    }    
 }

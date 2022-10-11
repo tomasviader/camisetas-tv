@@ -1,6 +1,6 @@
 
 .item-div{
-    border: 1px solid #000;
+    border-radius: 3%;
     margin: 3rem 3rem 3rem 3rem;
     
     .item-label{
@@ -26,18 +26,19 @@
         .but-see-more{
             text-decoration: none;
             padding: .5rem;
-            border: 1px solid black;
+            border: 1px solid rgb(206, 205, 205);
             border-radius: 10%;
             font-size: 1.1rem;
             margin-bottom: 1rem;
-            color: blue;
+            //color: rgb(105, 105, 105);
+            color: rgb(157, 157, 157);
+            background: rgb(58, 58, 58);
 
             &:hover {
-                color:white;
-                background-color: rgb(24, 131, 238);
+                color: #000;
+                font-weight: 500;
+                background-color: rgb(106, 106, 106);
             }
         }
     }
-
-
 }

@@ -1,14 +1,18 @@
 import { useLoginContext } from '../../context/LoginContext';
 import './UserHeader.scss'
 
-
 const UserHeader = () => {
     const {user, logout} = useLoginContext()
-    
+
     return (
         <div>
-            <small>{user.user}</small>
-            <button onClick={logout} className='bt-logout'>Cerrar Sesion</button>
+            {user.logged
+            ?   <>
+                    <small>{user.user}</small>
+                    <button onClick={logout} className='bt-logout'>Cerrar Sesion</button>
+                </>
+            : <p> </p>
+        }
         </div>
     )
 }

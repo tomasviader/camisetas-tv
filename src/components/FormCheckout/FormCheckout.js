@@ -3,6 +3,7 @@ import { useCartContext } from "../../context/CartContext"
 import { addDoc, collection, getDocs, writeBatch, query, where, documentId } from 'firebase/firestore'
 import { db } from '../../firebase/config'
 import useForm from "../../hooks/useForm"
+import './FormCheckout.scss'
 
 const FormCheckout = () => {
 
@@ -82,12 +83,9 @@ const FormCheckout = () => {
     }
 
     return (
-        <div>
-            <h2>Checkout</h2>
-            <hr/>
-
+        <div className="div-form-checkout">
+            <h1>Finaliza tu compra!</h1>
             <form onSubmit={handleSubmitCheckout}>
-
                 <input
                 name="nombre" 
                 value={values.nombre}
@@ -121,7 +119,6 @@ const FormCheckout = () => {
                 />
 
                 <button type="submit">Enviar</button>
-
             </form>
         </div>
     )

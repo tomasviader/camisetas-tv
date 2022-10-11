@@ -1,7 +1,5 @@
 import { createContext, useState, useContext } from "react";
 
-
-
 export const LoginContext = createContext()
 
 const usuario = [

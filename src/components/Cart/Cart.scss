@@ -2,8 +2,8 @@
 .div-cart{
     display: flex;
     flex-direction: row;
+    margin-bottom: 19rem;
     
-
     h1{
         display: none;
         position: absolute;
@@ -15,7 +15,7 @@
         width: 50%;
 
         .div-referencias{
-            margin: 2rem 0 -3rem 4rem;
+            margin: 2rem 0 -2rem 2rem;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -26,33 +26,31 @@
                 width: 300px;
                 text-align: left;
             }
-    
             .p-precio{
-                width: 100px;
-                margin-left:11.25rem;
+                width: 80px;
+                margin-left: 14rem;
+                margin-right: -4rem;
             }
-    
             .p-cantidad{
-                width: 100px;
-                margin-left:5.5rem;
-            
+                width: 100%;
+                margin-right: 0.5rem;
+                margin-left: 11rem;
             }
             .p-talle{
-                width: 100px;
+                width: 100%;
                 margin-left:4.25rem;
             }
-
-            
         }
 
         .div-but{
             margin: 4rem 0 0 4rem;
-
+            
             .but-vaciar{
-                background: #f44336;
+                color: white;
+                background: #CE142F;
                 border: none;
                 border-radius: 50px;
-                width: 30%;
+                width: 40%;
                 height: 2.25rem;
                 font-weight: 400;
                 text-transform: uppercase;
@@ -62,11 +60,12 @@
             }
     
             .but-continue{
+                position: absolute;
                 margin-left: 10rem;
-                background: #737878;
+                background: #CE142F;
                 border: none;
                 border-radius: 50px;
-                width: 40%;
+                width: 20%;
                 height: 2.25rem;
                 font-weight: 400;
                 text-transform: uppercase;
@@ -82,30 +81,30 @@
         }
     }
 
-    .resumem-compra{
-        border: 1px solid black;
+    .resumen-compra{
+        background: #a8a6a6;
+        background: #6d6d6d;
+
+        border-radius: 10%;
         width: 23rem;
+        height: 22rem;
         margin: 3rem 0 0 12rem;
 
         h3{
+            margin-top: 3rem;
             text-align: center;
         }
 
         .div-total{
             display: flex;
+            margin-top: 3rem;
             justify-content: space-around;
             font-size: large;
-            color: #797877;
-
-            .h4-total-numero{
-                color: #000000;
-            }
         }
-
 
         .but-success{
             margin: 4rem 0 0 4.5rem;
-            background: #56f436;
+            background: #CE142F;
             border: none;
             border-radius: 50px;
             width: 60%;
@@ -117,14 +116,15 @@
             cursor: pointer;
             
             a{
-                color: #000000;
+                font-weight: 400;
+                color: #fff;
                 text-decoration: none;
             }
         }
-
     }
 }
 
+
 footer{
-    display: none;
+    margin-top: 12rem;
 }

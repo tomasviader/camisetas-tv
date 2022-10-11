@@ -1,0 +1,44 @@
+.div-form-checkout{
+    margin-bottom: 16rem;
+
+    h1{
+        margin: 5rem 0 3rem 0;
+        text-align: center;
+        color: #828282;
+        text-decoration:underline;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -5rem;
+        
+        input{
+            margin-top: 3rem;
+            height: 2rem;
+            width: 18rem;
+            text-align: center;
+        }
+        
+        button{
+            margin-top: 4rem;
+            width: 8rem;
+            height: 2.25rem;
+            background: #969999;
+                border: none;
+                border-radius: 50px;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 14px;
+                cursor: pointer;
+            
+            &:hover{
+                background-color:#828282;
+                font-weight: bold;
+                color: #ffffff;
+            }
+        }
+    }
+}
+

@@ -37,13 +37,13 @@ const Cart = () => {
                                 
                             </div>
 
-                            <div className="resumem-compra">
+                            <div className="resumen-compra">
                                 <h3>Resumen compra</h3>
                                 <div className="div-total">
                                     <h4 className="h4-total">Total</h4>
                                     <h4 className="h4-total-numero">${cartTotal()}</h4>
                                 </div>
-                                <button className="but-success"><Link to="/checkout">Terminar mi compra</Link></button>
+                                <button className="but-success"><Link to="/checkout">Finalizar compra</Link></button>
                             </div>
 
                         </div>

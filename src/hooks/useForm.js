@@ -1,7 +1,5 @@
 import { useState } from "react"
 
-
-
 const useForm = (init) => {
     
     const [values, setValues] = useState(init)

@@ -1,12 +1,10 @@
 import './Select.scss'
 
-
 const Select = ( {talles, onSelect} ) => {
 
     const handleSelect= (e) => {
         onSelect(e.target.value)
     }
-
 
     return (
         <div className="select-talles">

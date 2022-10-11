@@ -1,31 +1,32 @@
 h1{
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: -3rem;
 }
 
 .div-form{
     display: flex;
     flex-direction: row;
     margin: auto;
-    //width: 50%;
     align-items: center;
     justify-content: center;
-    
+    margin-bottom: 9rem;
     
     .div-inputs{
         display: flex;
         flex-direction: column;
         align-items:center;
-        margin: 7rem 3rem 3rem 0;
+        margin: 7rem 3rem 7rem 0;
         
         p{
-            margin-left: -10rem;
+            margin-left: -13rem;
             margin-bottom: -0.01rem;
             font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
         
         .p-email{
-            margin-left: -12rem;
-
+            margin-left: -14rem;
         }
 
         input{
@@ -46,6 +47,20 @@ h1{
             height: 15rem;
             width: 23rem;
         }
+
+        button{
+            margin: 1.5rem 4rem 0 4.5rem;
+            width: 60%;
+            height: 2.25rem;
+            background: #969999;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            cursor: pointer;
+            
+        }
     }
-    
 } 
+

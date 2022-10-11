@@ -7,12 +7,9 @@ import FinishButton from '../FinishButton/FinishButton'
 
 const ItemDetail = ( {item} ) => {
 
-
     const { cart, addToCart, isInCart } = useCartContext()
-
     const [cantidad, setCantidad] = useState(1)
     const [talle, setTalle] = useState(item.talles[0].value)
-
 
     const handleAgregar = () =>{
         
@@ -23,10 +20,7 @@ const ItemDetail = ( {item} ) => {
             talle,
             cantidad
         }
-
-
         addToCart(itemToCart)
-
     }
 
 

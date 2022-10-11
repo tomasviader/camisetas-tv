@@ -9,8 +9,6 @@ const ItemDetail = ( {item} ) => {
 
 
     const { cart, addToCart, isInCart } = useCartContext()
-    console.log(cart)
-
 
     const [cantidad, setCantidad] = useState(1)
     const [talle, setTalle] = useState(item.talles[0].value)
